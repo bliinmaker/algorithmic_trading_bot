@@ -45,7 +45,6 @@ def start_mt5(project_settings):
         except Exception as e:
             print(f"Error logging into MetaTrader 5: {e}")
             mt5_login = False
-
     # Return the outcome to the user
     if mt5_login:
         return True

@@ -12,7 +12,6 @@ import indicator_lib
 # Location of settings.json
 settings_filepath = "settings.json" # <- This can be modified to be your own settings filepath
 
-
 # Function to import settings from settings.json
 def get_project_settings(import_filepath):
     """
@@ -113,6 +112,7 @@ if __name__ == '__main__':
     print("Let's build an awesome trading bot!!!")
     # Import settings.json
     project_settings = get_project_settings(import_filepath=settings_filepath)
+    print(project_settings["mt5"]["server"])
     # Run through startup proceedure
     startup = start_up(project_settings=project_settings)
     # Make it so that all columns are shown
@@ -129,7 +129,7 @@ if __name__ == '__main__':
         while 1:
             # Get a value for current time. Use BTCUSD as it trades 24/7
             time_candle = mt5_lib.get_candlesticks(
-                symbol="BTCUSD.a",
+                symbol="GBPUSD",
                 timeframe=timeframe,
                 number_of_candles=1
             )

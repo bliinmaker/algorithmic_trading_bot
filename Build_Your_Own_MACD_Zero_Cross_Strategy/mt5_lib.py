@@ -30,7 +30,6 @@ def start_mt5(project_settings):
         print(f"Error initializing MetaTrader 5: {e}")
         # Return False
         mt5_init = False
-
     # If MT5 initialized, attempt to login to MT5
     mt5_login = False
     if mt5_init:

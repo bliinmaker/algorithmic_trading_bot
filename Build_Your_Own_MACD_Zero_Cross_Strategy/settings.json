@@ -1,0 +1,10 @@
+{
+    "mt5": {
+        "username": "10000196389",
+        "password": "sjbwnPZw",
+        "server": "MetaQuotes-Demo",
+        "mt5_pathway": "C:/Program Files/MetaQuotes-Demo - MetaTrader 5/terminal64.exe",
+        "symbols": ["USDJPY", "EURUSD", "GBPUSD"],
+        "timeframe": "H1"
+    }
+}
